@@ -23,7 +23,7 @@ Are the above inputs correct? (Yes,No):y
 Proceeding to Next Steps....
 
 
-
+##Notes:
 After the execution, you will get a directory called outputfiles  with each OLT IP in a dedicated directory.
 
 The script will not change anything on the OLTs, it will only retrieve all the SIP configurations and generate commands to correct them, and a file to reboot the ONTs. 
