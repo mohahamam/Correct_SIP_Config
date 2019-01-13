@@ -29,7 +29,7 @@ def send_commands_to_OLT(hostname,Username,Password,commandsfile,Verbose):
 	try:
 		print('~'*79)
 		print('connecting to the device',hostname)
-		connection = netmiko.ConnectHandler(ip=hostname,device_type='alcatel_sros',username=Username,password=Password)
+		connection = netmiko.ConnectHandler(ip=hostname,device_type='alcatel_sros',username=Username,password=Password,session_timeout=7200,timeout=7200)
 		print('connection to ',hostname,'is successful',type(connection))
 		
 		with open (logfilename,'w') as commandsin:
